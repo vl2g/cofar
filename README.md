@@ -21,6 +21,7 @@ Coming soon!
 
 ## Training
 MS-COCO - pretraining checkpoint [path coming soon] 
+
 Respective config files are in ```config/``` folder and are automatically loaded.
 
 # MLM finetuning
