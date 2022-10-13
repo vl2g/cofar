@@ -1,0 +1,47 @@
+per_gpu_eval_batch_size: 100
+per_gpu_train_batch_size : 8 # for mlm only cofar ft, we used 16
+n_gpu: 2
+distributed : True # for mlm only cofar ft, we set False
+num_workers : 4
+num_labels : 2
+SEED : 42
+
+# option to vary the importance of losses!
+itm_loss_weight : 1
+mlm_loss_weight : 1
+
+# optimizer details
+optimizer:
+  params:
+    eps: 1.0e-08
+    lr: 2e-5 # for itm use, 2e-5 (15 epochs itm) and 5e-5 (10 epochs mlm)
+    weight_decay: 0
+  type: AdamW
+
+
+# confusing config!
+scheduler : constant
+warmup_steps : 0 # steps to warmup fs using warmup scheduler
+scheduler_step_size : 3000 # reduce the lr after this no. of steps
+scheduler_gamma : 0.2 # multiply all lr by gamma after scheduler_step_size steps
+max_steps : -1 # <0 means decided by number of epochs to train
+num_train_epochs : 15 # number of epochs to train (10 for mlm and 15 for itm)
+gradient_accumulation_steps : 1 # Number of updates steps to accumulate before backward
+max_grad_norm : 5.0 # check this
+start_epoch : 0
+
+
+
+# log steps and checkpoint config
+logging_steps : 100 #  log every this steps
+save_steps : 500 # Save checkpoint every this steps
+
+# logs and checkpoint path
+output_dir : vlm_logs/
+
+# m1 : modified training - cofar - (neg c- pos img - neg know), (pos c - neg im -neg know)
+eval_model_dir : vlm_eval/cofar_itm_ft/
+load_from_checkpoint : True
+checkpoint_path : vlm_eval/cofar_mlm_ft/checkpoint_9.pt
+
+auto_neg : True  # set to true when using COCO or COFAR.

@@ -1,0 +1,20 @@
+VLMConfig:
+  hidden_size : 768
+  num_hidden_layers: 3
+  num_attention_heads: 8
+  # init_from_bert_base: True
+
+text_bert_config:
+  init_from_bert_base: True
+
+lr_scale_text_bert: 0.1 # less only because we are finetuning this part.
+
+vis_dim : 2048 # faster RNN bj feature embedding
+loc_dim : 4 # bbox size
+max_position_embeddings : 120 # equal to max seq len
+max_visual_embeddings : 50 # equal to max vis seq len
+max_region_features : 50 # equal to max_visual_embeddings
+token_vocab_size : 2 # no of tokens 0 for text and 1 for visual feature
+device : "cuda"
+use_mlm : True
+use_itm : False
