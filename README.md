@@ -14,23 +14,23 @@ conda env create -n kmmt --file kmmt.yml
 conda activate kmmt
 ```
 
-## Data
+# Data
 
 Coming soon!
 
 
-## Training
+# Training
 MS-COCO - pretraining checkpoint [path coming soon] 
 
 Respective config files are in ```config/``` folder and are automatically loaded.
 
-# MLM finetuning
+## MLM finetuning
 
 ```
 python main.py --do_train --mode mlm
 ```
 
-# ITM finetuning
+## ITM finetuning
 
 ```
 CUDA_VISIBLE_DEVICES=0,1 python -m torch.distributed.launch --nproc_per_node 2 --nnodes 1 --node_rank 0 main.py --do_train --mode itm
