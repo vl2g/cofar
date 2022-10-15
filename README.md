@@ -27,6 +27,8 @@ Also, both oracle and wikified knowledge bases for all categories can be downloa
 ## Feature extraction
 Image Feature extraction: [Script](https://gist.github.com/revantteotia/7a992edff725a08819fa21d87d8d2598).
 
+Create folder ```train_obj_frcn_features/``` inside ```data/cofar_{category}/``` folder for corresponding categories and copy image features to this folder.
+
 # Training
 MS-COCO - pretraining checkpoint can be downloaded from [here](https://drive.google.com/file/d/1Yep6zc652isEk-e4_IcoUYPQr1bzeSet/view?usp=sharing).
 
