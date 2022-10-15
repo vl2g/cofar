@@ -29,6 +29,7 @@ Image Feature extraction: [Script](https://gist.github.com/revantteotia/7a992edf
 
 # Training
 MS-COCO - pretraining checkpoint can be downloaded from [here](https://drive.google.com/file/d/1Yep6zc652isEk-e4_IcoUYPQr1bzeSet/view?usp=sharing).
+
 Place the downloaded ```kmmt_pretrain_checkpoint.pt``` in ```working_checkpoints``` folder.
 
 Respective config files are in ```config/``` folder and are automatically loaded.
