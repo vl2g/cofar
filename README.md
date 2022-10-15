@@ -20,7 +20,7 @@ Coming soon!
 
 
 # Training
-MS-COCO - pretraining checkpoint [path coming soon] 
+MS-COCO - pretraining checkpoint [path coming soon](https://drive.google.com/file/d/1Yep6zc652isEk-e4_IcoUYPQr1bzeSet/view?usp=sharing)
 
 Respective config files are in ```config/``` folder and are automatically loaded.
 
