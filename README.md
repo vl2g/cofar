@@ -19,13 +19,13 @@ Images: [link](https://drive.google.com/file/d/1pzQdDhCCLWn-L5VMxBb2s4rY7M7mQkdf
 
 Image format: [Readme](https://github.com/vl2g/vl2g.github.io/blob/master/projects/cofar/docs/dataset_README.md)
 
-Image Feature extraction: [Script](https://gist.github.com/revantteotia/7a992edff725a08819fa21d87d8d2598)
 
 Training and testing data can be downloaded from the "Dataset Downloads" section in this [page](https://vl2g.github.io/projects/cofar/)
 
 Also, both oracle and wikified knowledge bases for all categories can be downloaded from the same link above.
 
 ## Feature extraction
+Image Feature extraction: [Script](https://gist.github.com/revantteotia/7a992edff725a08819fa21d87d8d2598)
 
 # Training
 MS-COCO - pretraining checkpoint can be downloaded from [here].(https://drive.google.com/file/d/1Yep6zc652isEk-e4_IcoUYPQr1bzeSet/view?usp=sharing)
