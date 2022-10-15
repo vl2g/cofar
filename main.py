@@ -147,7 +147,6 @@ def train(config, train_dataset, model):
     # zero if any previous grads exist
     model.zero_grad()
     # print(model)
-    #print(os.path.join(config.eval_model_dir, f'webqa_checkpoint_{0}_{global_step}.pt'))
 
     t_loss = v_loss = []
 

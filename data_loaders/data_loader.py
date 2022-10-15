@@ -62,7 +62,7 @@ class VLDataset(Dataset):
         # file paths
         # self.captions_file = config.captions_file_path
         # self.img_features_path = config.img_features_path
-        self.captions_file = op.join(config.data_dir, '{}_captions.json'.format(config.dir_split))
+        self.captions_file = op.join('data', '{}_captions.json'.format(config.dir_split))
         self.img_features_path = op.join(config.data_dir, 'train_obj_frcn_features/')
 
         # max lens
@@ -88,8 +88,6 @@ class VLDataset(Dataset):
         if config.use_cofar_knowledge:
 
             self.knowledge_file = op.join(config.data_dir, 'KB_oracle_brand.json') # brand
-            # self.knowledge_file = op.join(config.data_dir, 'KB_oracle_celeb.json') # celeb
-            # self.knowledge_file = op.join(config.data_dir, 'KB_oracle_landmark.json') # landmark
 
 
             self.knowledge = read_json(self.knowledge_file)
@@ -250,8 +248,7 @@ class VLDataset(Dataset):
 
             return index, example_pair
 
-        # IMPORTANT-- SET use_cofar_knowledge inside data_config to False when using WebQA!!!
-        # also set the same flag to false, if you dont want to use knowledge track
+        # IMPORTANT-- SET use_cofar_knowledge inside data_config to False if you dont want to use knowledge track.
         elif self.config.use_cofar_knowledge:
 
             img_idx, cap_idxs = self.get_image_caption_idx(index)

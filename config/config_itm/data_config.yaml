@@ -1,6 +1,5 @@
 is_train : True
 dir_split : 'train'
-# data_dir : '/mnt/DATA3/mishra/abhiram/KMIS/knowledge-aware-mmt/data/coco/' # coco
 data_dir: 'data/cofar_brand' # cofar brand
 max_seq_len : 120 # max words allowed in caption
 max_vis_seq_len : 50 # max object features taken from images.

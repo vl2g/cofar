@@ -1,0 +1,40 @@
+batch_size : 420
+
+cofar_brand : True
+cofar_celeb : False
+cofar_landmark : False
+
+
+load_from_checkpoint : True
+test_checkpoint_path : working_checkpoints/cofar_itm_final_checkpoint.pt
+
+epoch_wise_test : False
+plot_hits : False
+
+print_hits_every_k_captions : 10 # value of k
+
+path_to_plots : 'plots/'
+plot_name : '2k_cofar_brand.jpg'
+
+# only set epoch start-end when doing epoch wise test
+epoch_start : 0
+epoch_end : 42
+
+# only for cofar
+use_cofar_knowledge : True  
+use_oracle_knowledge : False
+use_wikified_knowledge : True
+
+run_results_from_pkl : False
+run_results_from_model : True
+
+
+path_to_results_pickle : /mnt/DATA3/mishra/abhiram/KMIS/VLM/result_pkls/cofar_3k_wiki.pkl
+
+# name of the pkl file that has to be created, in case run results from model is set to true.
+save_to_pickle : True
+pickle_file_name : 'cofar_scores.pkl'
+
+output_dir_pickle : 'result_pkls/' # for pickle files
+logger_name : 'cofar_ret'
+log_dir : 'vlm_logs'
