@@ -52,3 +52,20 @@ coming soon!
 
 # License
 This code and data are released under the [MIT license](https://github.com/vl2g/cofar/blob/main/LICENSE).
+
+# Cite
+If you find this data/code/paper useful for your research, please consider citing.
+
+```
+@inproceedings{cofar2022,
+  author    = "Gatti, Prajwal and 
+              Penamakuri, Abhirama Subramanyam and
+              Teotia, Revant and
+              Mishra, Anand and
+              Sengupta, Shubhashis and
+              Ramnani, Roshni",
+  title     = "COFAR: Commonsense and Factual Reasoning in Image Search",
+  booktitle = "AACL-IJCNLP",
+  year      = "2022",
+}
+```
