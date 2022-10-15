@@ -1,14 +1,10 @@
 batch_size : 420
 
-cofar_brand : True
-cofar_celeb : False
-cofar_landmark : False
-
+category : brand
 
 load_from_checkpoint : True
 test_checkpoint_path : working_checkpoints/cofar_itm_final_checkpoint.pt
 
-epoch_wise_test : False
 plot_hits : False
 
 print_hits_every_k_captions : 10 # value of k

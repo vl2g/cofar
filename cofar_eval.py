@@ -94,7 +94,7 @@ test_config = load_config_file(test_config_path)
 
 
 parser = argparse.ArgumentParser()
-parser.add_argument("--query_file", type=str, help="path to queries", default='data/cofar_brand/cofar_brand_queries_1K.json')
+parser.add_argument("--category", type=str, help="path to queries", default='brand')
 args = parser.parse_args()
 
 config = OmegaConf.merge(train_config, data_config, model_config, test_config)
@@ -102,13 +102,7 @@ config = OmegaConf.merge(train_config, data_config, model_config, test_config)
 # merging cli arguments
 config = OmegaConf.merge(config, OmegaConf.create(vars(args)))
 
-
-if test_config.cofar_brand:
-    data_root = 'cofar_brand'
-elif test_config.cofar_landmark:
-    data_root = 'cofar_landmark'
-elif test_config.cofar_celeb:
-    data_root = 'cofar_celeb'
+data_root = 'cofar_' + test_config.category
 
 cap2img = {}
 captions_file = 'data/' + data_root + '/cofar_queries_1K.json'
@@ -135,13 +129,7 @@ class COFARDataset(Dataset):
 
         # file paths
 
-        if test_config.cofar_brand:
-            data_root = 'cofar_brand'
-        elif test_config.cofar_landmark:
-            data_root = 'cofar_landmark'
-        elif test_config.cofar_celeb:
-            data_root = 'cofar_celeb'
-
+        data_root = 'cofar_' + test_config.category
 
         self.captions_file = 'data/' + data_root + '/cofar_queries_1K.json' # change it to 5K when running evaluation for 5K gallery size
         self.img_features_path = 'data/' + data_root + '/train_obj_frcn_features'
