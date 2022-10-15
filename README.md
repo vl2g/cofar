@@ -1,7 +1,7 @@
-# cofar
+# COFAR
 **Official implementation of the COFAR: Commonsense and Factual Reasoning in Image Search (AACL-IJCNLP 2022 Paper)**
 
-[project page](https://vl2g.github.io/projects/cofar/) | [paper](https://vl2g.github.io/)
+[paper](https://vl2g.github.io/projects/cofar/docs/COFAR-AACL2022.pdf) | [project page](https://vl2g.github.io/projects/cofar/)
 
 ## Requirements
 * Use **python >= 3.8.5**. Conda recommended : [https://docs.anaconda.com/anaconda/install/linux/](https://docs.anaconda.com/anaconda/install/linux/)
