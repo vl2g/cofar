@@ -42,6 +42,6 @@ output_dir : vlm_logs/
 # m1 : modified training - cofar - (neg c- pos img - neg know), (pos c - neg im -neg know)
 eval_model_dir : vlm_eval/cofar_mlm_ft/
 load_from_checkpoint : True
-checkpoint_path : working_checkpoints/mmt_retrain_checkpoint_15.pt
+checkpoint_path : working_checkpoints/kmmt_pretrain_checkpoint.pt
 
 auto_neg : True  # set to true when using COCO or COFAR.
