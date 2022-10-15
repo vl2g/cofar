@@ -51,4 +51,4 @@ CUDA_VISIBLE_DEVICES=0,1 python -m torch.distributed.launch --nproc_per_node 2 -
 coming soon!
 
 # License
-Detectron2 is released under the [MIT license](https://github.com/vl2g/cofar/blob/main/LICENSE).
+This code and data are released under the [MIT license](https://github.com/vl2g/cofar/blob/main/LICENSE).
