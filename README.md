@@ -28,7 +28,7 @@ Also, both oracle and wikified knowledge bases for all categories can be downloa
 Image Feature extraction: [Script](https://gist.github.com/revantteotia/7a992edff725a08819fa21d87d8d2598)
 
 # Training
-MS-COCO - pretraining checkpoint can be downloaded from [here].(https://drive.google.com/file/d/1Yep6zc652isEk-e4_IcoUYPQr1bzeSet/view?usp=sharing)
+MS-COCO - pretraining checkpoint can be downloaded from [here](https://drive.google.com/file/d/1Yep6zc652isEk-e4_IcoUYPQr1bzeSet/view?usp=sharing).
 Place the downloaded ```kmmt_pretrain_checkpoint.pt``` in ```working_checkpoints``` folder.
 
 Respective config files are in ```config/``` folder and are automatically loaded.
