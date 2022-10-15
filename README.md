@@ -49,8 +49,10 @@ CUDA_VISIBLE_DEVICES=0,1 python -m torch.distributed.launch --nproc_per_node 2 -
 ## Evaluation
 
 ```
-python cofar_eval.py
+python cofar_eval.py --category brand
 ```
+
+Other settings can be changed from ```config/test_config.yaml```
 
 # License
 This code and data are released under the [MIT license](https://github.com/vl2g/cofar/blob/main/LICENSE).
