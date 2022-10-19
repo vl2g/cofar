@@ -50,7 +50,9 @@ CUDA_VISIBLE_DEVICES=0,1 python -m torch.distributed.launch --nproc_per_node 2 -
 
 ## Evaluation
 
-Download our cofar finetuned checkpoint from [here](coming soon).
+Download our cofar finetuned checkpoint from [here](https://drive.google.com/file/d/1sWoqATnTyz0-SuAMT4BAmNyhvg5feuF5/view?usp=sharing).
+
+Copy the downloaded ```cofar_itm_final_checkpoint.pt``` to ```working_checkpoints/``` folder.
 
 ```
 python cofar_eval.py --category brand
