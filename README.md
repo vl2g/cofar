@@ -1,4 +1,7 @@
 # COFAR
+
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/cofar-commonsense-and-factual-reasoning-in/image-retrieval-on-cofar)](https://paperswithcode.com/sota/image-retrieval-on-cofar?p=cofar-commonsense-and-factual-reasoning-in)
+
 **Official implementation of the COFAR: Commonsense and Factual Reasoning in Image Search (AACL-IJCNLP 2022 Paper)**
 
 [paper](https://vl2g.github.io/projects/cofar/docs/COFAR-AACL2022.pdf) | [project page](https://vl2g.github.io/projects/cofar/)
